@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Text Complexity Checker</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
   <body>
-
+    <div id="app">
+      <base-form v-model="textToCheck"></base-form>
+      <div id ="buttonWrapper">
+        <p>Ce texte comporte {{ wordCount }} mots</p>
+        <button id="checkButton" v-on:click="checkText">Check this text's Complexity</button>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
