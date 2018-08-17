@@ -3,15 +3,24 @@
 <head>
   <meta charset="utf-8">
   <title>Text Complexity Checker</title>
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
     <div id="app">
       <base-form v-model="textToCheck"></base-form>
       <div id ="buttonWrapper">
+        <div>
+          <input type="radio" v-model="language" id="anglais" name="language" value="english">
+          <label for="anglais">English</label>
+          <input type="radio" v-model="language" id="francais" name="language" value="french">
+          <label for="francais">Français</label>
+        </div>
         <p>Ce texte comporte {{ wordCount }} mots, {{ sentencesCount }} phrases et {{ syllabeCount }} syllabes</p>
-        <button id="checkButton" v-on:click="checkText">Check this text's Complexity</button>
+        <button id="checkButton" v-on:click="checkText">Tester la complexité</button>
       </div>
+      <p v-if="fkReadingEase !== 0"> Ce texte a une complexité de : <b>{{ fkReadingEase | fixed(2) }}</b>, selon la formule de Flesch-Kincaid</p>
+      <p v-if="fkReadingEase !== 0"> Ceci correspond au niveau de lectuve d'un élève en "grade" : <b>{{ fkGradeLevel | fixed(2) }}</b> soit d'environ <b>{{ fkGradeLevel + 6 | fixed(0) }}</b> ans </p>
     </div>
     <script src="main.js"></script>
   </body>
