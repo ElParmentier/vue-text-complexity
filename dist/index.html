@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Text Complexity Checker</title>
@@ -9,7 +9,7 @@
     <div id="app">
       <base-form v-model="textToCheck"></base-form>
       <div id ="buttonWrapper">
-        <p>Ce texte comporte {{ wordCount }} mots</p>
+        <p>Ce texte comporte {{ wordCount }} mots, {{ sentencesCount }} phrases et {{ syllabeCount }} syllabes</p>
         <button id="checkButton" v-on:click="checkText">Check this text's Complexity</button>
       </div>
     </div>

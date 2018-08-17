@@ -17,6 +17,9 @@
   "homepage": "https://github.com/ElParmentier/vue-text-complexity#readme",
   "dependencies": {
     "browser-sync": "^2.24.6",
+    "hyphenation.en-us": "^0.2.1",
+    "hyphenation.fr": "^0.2.1",
+    "hypher": "^0.2.5",
     "lodash": "^4.17.10",
     "vue": "^2.5.17"
   },
