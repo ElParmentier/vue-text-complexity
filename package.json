@@ -1,0 +1,31 @@
+{
+  "name": "vuetextcomplexity",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000v\u0000u\u0000e\u0000-\u0000t\u0000e\u0000x\u0000t\u0000-\u0000c\u0000o\u0000m\u0000p\u0000l\u0000e\u0000x\u0000i\u0000t\u0000y\u0000\r\u0000 \u0000",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElParmentier/vue-text-complexity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElParmentier/vue-text-complexity/issues"
+  },
+  "homepage": "https://github.com/ElParmentier/vue-text-complexity#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.6",
+    "hyphenation.en-us": "^0.2.1",
+    "hyphenation.fr": "^0.2.1",
+    "hypher": "^0.2.5",
+    "lodash": "^4.17.10",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
