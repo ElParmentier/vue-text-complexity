@@ -1,4 +1,4 @@
-#vue-text-complexity
+# vue-text-complexity
 
 
 Simple project to try vuejs and familiarize with its ways, aiming to implement a text complexity (readability) test
